@@ -1,0 +1,21 @@
+-runfw: org.apache.felix:org.apache.felix.framework;version='4.6.0'
+
+-runpath: \
+	org.json:json;version='20141113';strategy=exact
+	
+-runsystempackages:\
+	org.json;version='0.0.0'
+
+-runbundles:  \
+	javax.servlet:javax.servlet-api;version=3.1.0;strategy=exact,\
+	org.apache.felix:org.apache.felix.scr;version=1.8.2,\
+	org.apache.felix:org.apache.felix.http.jetty;version=3.0.0,\
+	org.apache.felix:org.apache.felix.http.api;version=2.3.2,\
+	org.apache.felix:org.apache.felix.configadmin;version=1.8.0,\
+	org.apache.felix:org.apache.felix.metatype;version=1.0.8,\
+	org.apache.felix:org.apache.felix.log;version=1.0.1,\
+	org.apache.felix:org.apache.felix.webconsole;version=4.2.6;strategy=exact,\
+	commons-fileupload:commons-fileupload;version=1.2.1,\
+	commons-io:commons-io;version=1.4;strategy=exact,\
+	org.osgi:org.osgi.compendium;version=4.1.0,\
+	sample.bundle;version=latest

@@ -1,0 +1,13 @@
+-buildpath: \
+	biz.aQute.bnd:biz.aQute.bnd.annotation;version='2.4.0'
+
+Bundle-Version: 0.0.0.${tstamp}
+
+Service-Component:  \
+	*
+
+Export-Package:  \
+	osgi.sample.echo.api
+Private-Package:  \
+	osgi.sample.echo.provider,\
+	osgi.sample.echo.consumer
