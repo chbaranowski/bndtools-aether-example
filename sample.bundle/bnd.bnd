@@ -1,13 +1,17 @@
 -buildpath: \
-	biz.aQute.bnd:biz.aQute.bnd.annotation;version='2.4.0'
+	biz.aQute.bnd:biz.aQute.bnd.annotation;version='2.4.0',\
+	com.google.guava:guava;version='18.0';strategy=exact
 
 Bundle-Version: 0.0.0.${tstamp}
 
-Service-Component:  \
-	*
+Service-Component: *
 
 Export-Package:  \
 	osgi.sample.echo.api
+
 Private-Package:  \
 	osgi.sample.echo.provider,\
 	osgi.sample.echo.consumer
+	
+Conditional-Package: \
+	com.google.common.base.*

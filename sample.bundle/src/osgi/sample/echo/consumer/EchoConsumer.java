@@ -1,5 +1,7 @@
 package osgi.sample.echo.consumer;
 
+import com.google.common.base.Optional;
+
 import osgi.sample.echo.api.Echo;
 import aQute.bnd.annotation.component.Activate;
 import aQute.bnd.annotation.component.Component;
@@ -12,7 +14,7 @@ public class EchoConsumer {
 	
 	@Activate
 	void start() {
-		echo.echo("Hello OSGi World!");
+		echo.echo(Optional.of("Hello OSGi World!"));
 	}
 
 	@Reference
