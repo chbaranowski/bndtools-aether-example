@@ -12,6 +12,3 @@ Export-Package:  \
 Private-Package:  \
 	osgi.sample.echo.provider,\
 	osgi.sample.echo.consumer
-	
-Conditional-Package: \
-	com.google.common.base.*
