@@ -1,0 +1,1 @@
+# Bndtools Example Maven Aether
